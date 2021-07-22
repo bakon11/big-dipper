@@ -64,7 +64,7 @@ body {
   
   span#network-nav {
     font-size: 1rem;
-    color: $black;
+    color: red;
     font-weight: bold;
   }
   
@@ -416,7 +416,7 @@ body {
       margin: -0.5em 0.5em 0 0.5em;
       padding: 0.5rem 1.5rem;
       box-shadow: initial;
-      color: $black;
+      color: red;
       cursor: pointer;
   
       &.active {
