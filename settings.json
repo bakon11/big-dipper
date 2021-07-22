@@ -40,14 +40,14 @@
         "banners": false
     },
     "remote":{
-        "rpc":"http://localhost:26657",
-        "api":"http://localhost:1317"
+        "rpc":"http://192.168.8.146:26657",
+        "api":"http://192.168.8.146:1317"
     },
     "debug": {
         "startTimer": true
     },
     "params":{
-        "startHeight": 0,
+        "startHeight": 497427,
         "defaultBlockTime": 5000,
         "validatorUpdateWindow": 300,
         "blockInterval": 15000,
