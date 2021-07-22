@@ -424,13 +424,13 @@ body {
           border: none;
           -webkit-box-shadow: initial;
           box-shadow: initial;
-          color: $primary;
+          color: red;
         }
   
         &:hover {
           border: none;
           background: $white;
-          color: $primary;
+          color: red;
         }
       }
     }
