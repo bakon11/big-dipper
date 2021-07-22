@@ -64,7 +64,7 @@ body {
   
   span#network-nav {
     font-size: 1rem;
-    color: red;
+    color: #000000;
     font-weight: bold;
   }
   
@@ -79,7 +79,7 @@ body {
   }
   
   .ledger-sign-in .error-message, .ledger-modal .error-message {
-    color: red;
+    color: #000000;;
   }
 
   #header {
@@ -321,7 +321,7 @@ body {
     -moz-transition: all 2s ease-out;
     -o-transition: all 2s ease-out;
     transition: all 2s ease-out;
-    color: black;
+    color: #000000;
   }
   
   div#countdown {
@@ -348,7 +348,7 @@ body {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      color: black
+      color: #000000;
     }
   }
   
@@ -418,7 +418,7 @@ body {
       margin: -0.5em 0.5em 0 0.5em;
       padding: 0.5rem 1.5rem;
       box-shadow: initial;
-      color: red;
+      color: #000000;
       cursor: pointer;
   
       &.active {
@@ -426,13 +426,13 @@ body {
           border: none;
           -webkit-box-shadow: initial;
           box-shadow: initial;
-          color: red;
+          color: #000000;
         }
   
         &:hover {
           border: none;
           background: $white;
-          color: red;
+          color: #000000;
         }
       }
     }
