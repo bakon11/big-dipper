@@ -171,7 +171,7 @@ export default class Header extends Component {
     render() {
         let signedInAddress = getUser();
         return (
-            <Navbar color="primary" dark expand="lg" fixed="top" id="header">
+            <Navbar color="primary" dark expand="lg" fixed="top" id="header" style={{color: "#000000"}}>
                 <NavbarBrand tag={Link} to="/"><img src="https://avatars.githubusercontent.com/u/25123050?s=200&v=4" className="img-fluid logo"/> <span className="d-none d-xl-inline-block" style={{color: "#000000"}}><T>Althea Testnet</T>&nbsp;</span><Badge color="secondary">2V3</Badge> </NavbarBrand>
                 {/*
                 <UncontrolledDropdown className="d-inline text-nowrap">
@@ -182,7 +182,7 @@ export default class Header extends Component {
                 <SearchBar id="header-search" history={this.props.history} />
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
-                    <Nav style={{color: "#000000"}} className="ml-auto text-nowrap" navbar>
+                    <Nav className="ml-auto text-nowrap" navbar>
                         <NavItem>
                             <NavLink tag={Link} to="/validators"><T>navbar.validators</T></NavLink>
                         </NavItem>
