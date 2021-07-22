@@ -21,7 +21,7 @@ export default class Home extends Component{
                 <title>Althea Testnet 2v3 | Block Exploder</title>
                 <meta name="description" content="Blockchain Software for decentralized ISPs" />
             </Helmet>
-            <ChainInfo/>
+            { /* <ChainInfo/> */ }
             <Consensus />
             <ChainStatus />
             <Row>
