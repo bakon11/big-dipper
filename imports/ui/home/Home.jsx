@@ -19,7 +19,7 @@ export default class Home extends Component{
         return <div id="home">
             <Helmet>
                 <title>Althea Exploder Testnet 2v3</title>
-                <meta name="description" content="Software for decentralized ISPs" />
+                <meta name="description" content="BLockchain Software for decentralized ISPs" />
             </Helmet>
             <ChainInfo/>
             <Consensus />
