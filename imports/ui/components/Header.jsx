@@ -172,7 +172,7 @@ export default class Header extends Component {
         let signedInAddress = getUser();
         return (
             <Navbar color="primary" dark expand="lg" fixed="top" id="header">
-                <NavbarBrand tag={Link} to="/"><img src="/img/big-dipper-icon-light.svg" className="img-fluid logo"/> <span className="d-none d-xl-inline-block"><T>navbar.siteName</T>&nbsp;</span><Badge color="secondary">{this.state.version}</Badge> </NavbarBrand>
+                <NavbarBrand tag={Link} to="/"><img src="https://avatars.githubusercontent.com/u/25123050?s=200&v=4" className="img-fluid logo"/> <span className="d-none d-xl-inline-block"><T>navbar.siteName</T>&nbsp;</span><Badge color="secondary">{this.state.version}</Badge> </NavbarBrand>
                 <UncontrolledDropdown className="d-inline text-nowrap">
                     <DropdownToggle caret={(this.state.networks !== "")} tag="span" size="sm" id="network-nav">{Meteor.settings.public.chainId}</DropdownToggle>
                     {this.state.networks}
