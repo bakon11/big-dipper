@@ -1,5 +1,5 @@
-$forbole-red: #F5EFD3;
-$primary: $forbole-red !default;
+$yellow: #F5EFD3;
+$primary: $yellow !default;
 
 @import "materia/variables";
 @import "bootstrap";
@@ -64,7 +64,7 @@ body {
   
   span#network-nav {
     font-size: 1rem;
-    color: $white;
+    color: $black;
     font-weight: bold;
   }
   
@@ -416,7 +416,7 @@ body {
       margin: -0.5em 0.5em 0 0.5em;
       padding: 0.5rem 1.5rem;
       box-shadow: initial;
-      color: $primary;
+      color: $black;
       cursor: pointer;
   
       &.active {
