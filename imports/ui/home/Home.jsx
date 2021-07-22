@@ -18,8 +18,8 @@ export default class Home extends Component{
     render() {
         return <div id="home">
             <Helmet>
-                <title>Althea Exploder Testnet 2v3</title>
-                <meta name="description" content="BLockchain Software for decentralized ISPs" />
+                <title>Althea Testnet 2v3 | Block Exploder</title>
+                <meta name="description" content="Blockchain Software for decentralized ISPs" />
             </Helmet>
             <ChainInfo/>
             <Consensus />
