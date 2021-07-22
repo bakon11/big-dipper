@@ -171,7 +171,7 @@ export default class Header extends Component {
     render() {
         let signedInAddress = getUser();
         return (
-            <Navbar color="primary" dark expand="lg" fixed="top" id="header">
+            <Navbar expand="lg" fixed="top" id="header">
                 <NavbarBrand tag={Link} to="/"><img src="https://avatars.githubusercontent.com/u/25123050?s=200&v=4" className="img-fluid logo"/> <span className="d-none d-xl-inline-block"><T>Althea Testnet</T>&nbsp;</span><Badge color="secondary">2V3</Badge> </NavbarBrand>
                 {/*
                 <UncontrolledDropdown className="d-inline text-nowrap">
