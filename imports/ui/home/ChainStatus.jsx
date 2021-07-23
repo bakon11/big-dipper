@@ -147,7 +147,7 @@ export default class ChainStatus extends React.Component {
 
     render(){
         if (this.props.loading){
-            return <Spinner type="grow" color="primary" />
+            return <Spinner type="grow" color="red" />
         }
         else {
             if (this.props.statusExist && this.props.status.prevotes){
@@ -157,7 +157,7 @@ export default class ChainStatus extends React.Component {
                             <Card body>
                                 <CardTitle><T>chainStatus.latestHeight</T></CardTitle>
                                 <CardText>
-                                    <span className="display-4 value text-primary">{this.state.blockHeight}</span>
+                                    <span className="display-4 value">{this.state.blockHeight}</span>
                                     {this.state.blockTime}
                                 </CardText>
                             </Card>
@@ -177,14 +177,14 @@ export default class ChainStatus extends React.Component {
                                 </UncontrolledDropdown>
                                 <CardTitle><T>chainStatus.averageBlockTime</T> ({this.state.blockTimeText})</CardTitle>
                                 <CardText>
-                                    <span className="display-4 value text-primary">{this.state.averageBlockTime}</span><T>chainStatus.seconds</T>
+                                    <span className="display-4 value">{this.state.averageBlockTime}</span><T>chainStatus.seconds</T>
                                 </CardText>
                             </Card>
                         </Col>
                         <Col lg={3} md={6}>
                             <Card body>
                                 <CardTitle><T>chainStatus.activeValidators</T></CardTitle>
-                                <CardText><span className="display-4 value text-primary">{this.state.numValidators}</span><T totalValidators={this.state.totalNumValidators}>chainStatus.outOfValidators</T></CardText>
+                                <CardText><span className="display-4 value">{this.state.numValidators}</span><T totalValidators={this.state.totalNumValidators}>chainStatus.outOfValidators</T></CardText>
                             </Card>
                         </Col>
                         <Col lg={3} md={6}>
@@ -200,7 +200,7 @@ export default class ChainStatus extends React.Component {
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                                 <CardTitle><T>chainStatus.onlineVotingPower</T> ({this.state.votingPowerText})</CardTitle>
-                                <CardText><span className="display-4 value text-primary">{this.state.votingPower}</span><T percent={numbro(this.state.bondedTokens/this.state.totalSupply).format("0.00%")} totalStakes={numbro(this.state.totalSupply/Coin.StakingCoin.fraction).format("0.00a")} denom={Coin.StakingCoin.displayName} denomPlural={Coin.StakingCoin.displayNamePlural}>chainStatus.fromTotalStakes</T></CardText>
+                                <CardText><span className="display-4 value">{this.state.votingPower}</span><T percent={numbro(this.state.bondedTokens/this.state.totalSupply).format("0.00%")} totalStakes={numbro(this.state.totalSupply/Coin.StakingCoin.fraction).format("0.00a")} denom={Coin.StakingCoin.displayName} denomPlural={Coin.StakingCoin.displayNamePlural}>chainStatus.fromTotalStakes</T></CardText>
                             </Card>
                         </Col>
                     </Row>
