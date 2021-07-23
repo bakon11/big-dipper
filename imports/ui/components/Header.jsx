@@ -173,12 +173,6 @@ export default class Header extends Component {
         return (
             <Navbar color="primary" light expand="lg" fixed="top" id="header" >
                 <NavbarBrand tag={Link} to="/"><img src="https://avatars.githubusercontent.com/u/25123050?s=200&v=4" className="img-fluid logo"/> <span className="d-none d-xl-inline-block" style={{color: "#000000"}}><T>Althea Testnet</T>&nbsp;</span><Badge color="secondary">2V3</Badge> </NavbarBrand>
-                {/*
-                <UncontrolledDropdown className="d-inline text-nowrap">
-                    <DropdownToggle caret={(this.state.networks !== "")} tag="span" size="sm" id="network-nav">{Meteor.settings.public.chainId}</DropdownToggle>
-                    {this.state.networks}
-                </UncontrolledDropdown>
-                */}
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto text-nowrap" navbar>
@@ -236,9 +230,9 @@ export default class Header extends Component {
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                         </NavItem>
-                        <SearchBar id="header-search" history={this.props.history} />
                     </Nav>
                 </Collapse>
+                <SearchBar id="header-search" history={this.props.history} />
             </Navbar>
         );
     }
