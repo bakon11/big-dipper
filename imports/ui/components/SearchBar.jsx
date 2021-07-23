@@ -55,9 +55,9 @@ export default class SearchBar extends Component {
     }
 
     render(){
-        return <InputGroup style={{ color: "#000000" }} className={(this.props.mobile)?'d-lg-none':'d-none d-lg-flex'} id={this.props.id}  >
-            <Input style={{color: "#000000"}} id="queryString" value={this.state.queryString} onChange={this.handleInput} placeholder={i18n.__('common.searchPlaceholder')} onKeyDown={this.handleSearch} />
-            {(this.props.mobile)?<InputGroupAddon style={{color: "#000000"}} addonType="append"><Button><i style={{color: "#000000"}} className="material-icons" onClick={this.handleMobileSearch}>search</i></Button></InputGroupAddon>:''}
+        return <InputGroup className={(this.props.mobile)?'d-lg-none':'d-none d-lg-flex'} id={this.props.id}  >
+            <Input id="queryString" value={this.state.queryString} onChange={this.handleInput} placeholder={i18n.__('common.searchPlaceholder')} onKeyDown={this.handleSearch} />
+            {(this.props.mobile)?<InputGroupAddon addonType="append"><Button><i className="material-icons" onClick={this.handleMobileSearch}>search</i></Button></InputGroupAddon>:''}
         </InputGroup>
     }
 }
