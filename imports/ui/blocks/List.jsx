@@ -28,7 +28,7 @@ export default class Blocks extends Component {
         if (this.props.loading) {
             return (
                 <Row>
-                    <Col><Spinner type="grow" color="primary" /></Col>
+                    <Col><Spinner type="grow" color="red" /></Col>
                 </Row>
             )
         }
