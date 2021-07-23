@@ -25,7 +25,7 @@ export default class Block extends Component {
                 <Col xs={4} sm={2} className="text-truncate"><i className="fas fa-hashtag d-sm-none"></i> {this.props.block.hash}</Col>
                 <Col xs={8} sm={3} md={2} lg={3} className="text-truncate" ><Link style={{ color: "#000000" }} to={"/validator/" + proposerOperatorAddress}><Avatar moniker={moniker} profileUrl={proposer.profile_url} address={proposerOperatorAddress} list={true} /> {moniker}</Link></Col>
                 <Col xs={4} sm={1} md={homepage ? 1 : 2}><i className="fas fa-sync d-sm-none"></i> {numbro(this.props.block.transNum).format('0,0')}</Col>
-                <Col xs={{size:4, offset:8}} sm={{size:2, offset:0}} style={{ color: "#000000" }} ><i className="fas fa-database d-sm-none"></i> <Link to={"/blocks/"+this.props.block.height}>{numbro(this.props.block.height).format('0,0')}</Link></Col>
+                <Col xs={{size:4, offset:8}} sm={{size:2, offset:0}} style={{ color: "#000000" }} ><i className="fas fa-database d-sm-none"></i> <Link style={{ color: "#000000" }} to={"/blocks/"+this.props.block.height}>{numbro(this.props.block.height).format('0,0')}</Link></Col>
             </Row>
         }
         else{
