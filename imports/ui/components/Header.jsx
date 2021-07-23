@@ -177,7 +177,7 @@ export default class Header extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto text-nowrap" navbar>
                         <NavItem>
-                            <NavLink style={{ color: "#000000" }} to="/validators"><T>navbar.validators</T></NavLink>
+                            <NavLink style={{ color: "#000000" }} tag={Link} to="/validators"><T>navbar.validators</T></NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink style={{ color: "#000000" }} tag={Link} to="/blocks"><T>navbar.blocks</T></NavLink>
