@@ -180,16 +180,16 @@ export default class Header extends Component {
                             <NavLink style={{ color: "#000000" }} to="/validators"><T>navbar.validators</T></NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink style={{ color: "#000000" }} to="/blocks"><T>navbar.blocks</T></NavLink>
+                            <NavLink style={{ color: "#000000" }} tag="Link" to="/blocks"><T>navbar.blocks</T></NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink style={{ color: "#000000" }} to="/transactions"><T>navbar.transactions</T></NavLink>
+                            <NavLink style={{ color: "#000000" }} tag="Link" to="/transactions"><T>navbar.transactions</T></NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink style={{ color: "#000000" }} to="/proposals"><T>navbar.proposals</T></NavLink>
+                            <NavLink style={{ color: "#000000" }} tag="Link" to="/proposals"><T>navbar.proposals</T></NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink style={{ color: "#000000" }} to="/voting-power-distribution"><T>navbar.votingPower</T></NavLink>
+                            <NavLink style={{ color: "#000000" }} tag="Link" to="/voting-power-distribution"><T>navbar.votingPower</T></NavLink>
                         </NavItem>
                         <NavItem id="user-acconut-icon">
                             {!signedInAddress?<Button className="sign-in-btn" color="link" size="lg" onClick={() => {this.setState({isSignInOpen: true})}}><i className="material-icons">vpn_key</i></Button>:
