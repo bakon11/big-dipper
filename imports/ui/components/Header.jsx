@@ -179,7 +179,6 @@ export default class Header extends Component {
                     {this.state.networks}
                 </UncontrolledDropdown>
                 */}
-                <SearchBar id="header-search" history={this.props.history} />
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto text-nowrap" navbar>
@@ -237,6 +236,7 @@ export default class Header extends Component {
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                         </NavItem>
+                        <SearchBar id="header-search" history={this.props.history} />
                     </Nav>
                 </Collapse>
             </Navbar>
