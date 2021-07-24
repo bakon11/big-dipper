@@ -28,9 +28,11 @@ export default class Home extends Component{
                 <Col md={6} className="mb-2">
                     <BlocksTable homepage={true} />
                 </Col>
+                {/*
                 <Col md={6} className="mb-2">
                     <Transactions homepage={true}/>
                 </Col>
+                */}
             </Row>
         </div>
     }
